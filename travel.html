@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $('#header').load('header.html');
+        $('#footer').load('footer.html');
+        $('#faq').load('FAQ.html');
+      });
+    </script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row align-items-center py-2">
+          <div class="col-3 d-flex justify-content-start">
+            <div class="top-navbar-brand fs-6" href="#">
+              <img src="img/marker.svg" alt="" />
+              <p class="location ms-1">İzmir/Turkey</p>
+            </div>
+          </div>
+          <div class="col-9 d-flex">
+            <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <div class="d-flex">
+                <div
+                  class="wp-wrapper d-flex justify-content-center align-items-center"
+                >
+                  <img src="img/wp-button.png" alt="" class="img-fluid" />
+                </div>
+                <div class="social-media-buttons-group">
+                  <button
+                    class="social-button rounded-circle"
+                    href="#!"
+                    role="button"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                  <button
+                    class="social-button rounded-circle"
+                    href="#!"
+                    role="button"
+                  >
+                    <i class="fab fa-facebook"></i>
+                  </button>
+                  <button
+                    class="social-button rounded-circle"
+                    href="#!"
+                    role="button"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button
+                    class="social-button rounded-circle"
+                    href="#!"
+                    role="button"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </button>
+                </div>
+                <div class="lang-dropdown">
+                  <div class="dropdown">
+                    <button
+                      class="lang-button dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="img/eng-flag.svg" alt="" />
+                      EN
+                    </button>
+                    <ul class="dropdown-menu text-uppercase">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src="img/eng-flag.svg" alt="" />
+                          en
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src="img/deu-flag.svg" alt="" />
+                          deu
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src="img/tr-flag.svg" alt="" />
+                          tr
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src="img/arab-flag.svg" alt="" />
+                          ar
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="main-navbar navbar navbar-expand-lg travel-navbar">
+        <div class="container">
+          <a class="navbar-brand flex-fill" href="index.html">
+            <img src="img/white-logo.png" alt="" class="img-fluid" />
+          </a>
+          <button class="btn btn-background me-2 d-lg-none d-sm-block">
+            Ücretsiz Teklif Alın
+          </button>
+
+          <button
+            class="navbar-toggler border-0 z-9"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="img/hamburger-menu.svg" alt="" />
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Hakkımızda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="process.html">Süreçler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paketler.html">Paketler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="travel.html">Travel</a>
+              </li>
+              <li class="nav-button d-sm-none d-lg-block">
+                <button class="btn btn-background">Ücretsiz Teklif Alın</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero masthead">
+      <div class="hero-section">
+        <div class="container col-xxl-12 px-4">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+              <div class="travel-shadow-title mt-5">
+                <div>
+                  <h1 class="travel-title-1">Diş bakım</h1>
+                  <h1 class="travel-title-1">sürecinizi</h1>
+                  <h1 class="travel-gradient-title">Tatile</h1>
+                  <h1 class="travel-title-1">Dönüştürün</h1>
+                </div>
+              </div>
+              <button class="btn white-btn med mt-4">
+                Start your Dental Travel
+                <img src="img/svg/right-arrow.svg" alt="" />
+              </button>
+            </div>
+            <div class="col-lg-7 col-md-6 d-none d-md-block">
+              <div class="img-wrapper d-flex justify-content-end">
+                <img
+                  src="img/travelPage/banner-img.png"
+                  class="img-fluid"
+                  alt="Bootstrap Themes"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TRAVEL-SMILE-SECTION -->
+    <section class="travel-smile travel-smile-bg">
+      <div class="container">
+        <div class="row align-items-center flex-md-row-reverse px-5 px-md-0">
+          <div class="col-sm-6">
+            <div class="img-wrapper d-flex justify-content-end">
+              <img
+                src="img/travelPage/travel-smile-img.png"
+                class="img-fluid"
+                alt="Bootstrap Themes"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="col-sm-6 text-center text-sm-start">
+            <div class="img-wrapper">
+              <img
+                src="img/travelPage/travel-smile-logo.png"
+                alt=""
+                class="img-fluid mb-lg-5 mb-md-2"
+              />
+            </div>
+            <div class="mb-lg-5">
+              <h1 class="travel-text fs-72 mb-lg-3">Gülüşünüz</h1>
+              <h1 class="travel-text fs-72 mb-lg-3">Bizim için önemli</h1>
+            </div>
+            <div class="mb-lg-1">
+              <h3 class="travel-text mb-lg-3">Mutlu yarınlar</h3>
+              <h3 class="travel-text mb-lg-3">Proestetik'le başlar</h3>
+            </div>
+            <div class="btn-wrapper justify-content-sm-start my-5">
+              <button type="button" class="btn gradient-btn thick">
+                Hizmetlerimiz
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TRAVEL-SERVICES-SECTION -->
+    <section class="travel-services travel-services-bg">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-3 fw-semibold text-uppercase text-white">
+            OUR SERVICES
+          </h2>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="img-wrapper">
+              <img
+                src="img/travelPage/services-travel-img1.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <h4 class="my-3">Hollywood Gülüşü</h4>
+          </div>
+          <div class="col-md-3">
+            <div class="img-wrapper">
+              <img
+                src="img/travelPage/services-travel-img2.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <h4 class="my-3">Hollywood Gülüşü</h4>
+          </div>
+          <div class="col-md-3">
+            <div class="img-wrapper">
+              <img
+                src="img/travelPage/services-travel-img3.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <h4 class="my-3">Hollywood Gülüşü</h4>
+          </div>
+          <div class="col-md-3">
+            <div class="img-wrapper">
+              <img
+                src="img/travelPage/services-travel-img4.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <h4 class="my-3">Hollywood Gülüşü</h4>
+          </div>
+        </div>
+        <div class="btn-wrapper mt-5 d-flex justify-content-center">
+          <button type="button" class="btn gradient-btn thick px-5">
+            Hizmetlerimiz
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- ROADMAP SECTION -->
+    <section class="roadmap-section">
+      <div class="container">
+        <div class="roadmap">
+          <div class="text-center mb-5">
+            <h2 class="roadmap-title">Roadmap</h2>
+          </div>
+          <div class="row px-5 px-0">
+            <div class="col-sm-2 col-6">
+              <div >
+                <div class="img-wrapper d-flex justify-content-center position-relative mb-5">
+                  <img
+                    src="img/travelPage/timeline-img1.png"
+                    alt=""
+                    class="d-block img-fluid"
+                  />
+                  <div class="travel-img-icon">
+                    <img src="img/travelPage/timeline-icon1.svg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+
+                <h3 class="text-center">İletişim</h3>
+              </div>
+            </div>
+            <div class="col-sm-2 col-6">
+              <div>
+                <div class="img-wrapper d-flex justify-content-center position-relative mb-5">
+                  <img
+                    src="img/travelPage/timeline-img2.png"
+                    alt=""
+                    class="d-block img-fluid"
+                  />
+                  <div class="travel-img-icon">
+                    <img src="img/travelPage/timeline-icon2.svg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <h3 class="text-center">Rezervasyon</h3>
+              </div>
+            </div>
+            <div class="col-sm-2 col-6">
+              <div>
+                <div class="img-wrapper d-flex justify-content-center position-relative mb-5">
+                  <img
+                    src="img/travelPage/timeline-img3.png"
+                    alt=""
+                    class="d-block img-fluid"
+                  />
+                  <div class="travel-img-icon">
+                    <img src="img/travelPage/timeline-icon3.svg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <h3 class="text-center">Yolculuk</h3>
+              </div>
+            </div>
+            <div class="col-sm-2 col-6">
+              <div>
+                <div class="img-wrapper d-flex justify-content-center position-relative mb-5">
+                  <img
+                    src="img/travelPage/timeline-img4.png"
+                    alt=""
+                    class="d-block img-fluid"
+                  />
+                  <div class="travel-img-icon">
+                    <img src="img/travelPage/timeline-icon4.svg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <h3 class="text-center">Tatil</h3>
+              </div>
+            </div>
+            <div class="col-sm-2 col-6">
+              <div>
+                <div class="img-wrapper d-flex justify-content-center position-relative mb-5">
+                  <img
+                    src="img/travelPage/timeline-img5.png"
+                    alt=""
+                    class="d-block img-fluid"
+                  />
+                  <div class="travel-img-icon">
+                    <img src="img/travelPage/timeline-icon5.svg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <h3 class="text-center">Tedavi</h3>
+              </div>
+            </div>
+            <div class="col-sm-2 col-6">
+              <div>
+                <div class="img-wrapper d-flex justify-content-center position-relative mb-5">
+                  <img
+                    src="img/travelPage/timeline-img6.png"
+                    alt=""
+                    class="d-block img-fluid"
+                  />
+                  <div class="travel-img-icon">
+                    <img src="img/travelPage/timeline-icon6.svg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <h3 class="text-center">Mutlu Gülüş</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="free-services-bg">
+      <div class="free-services">
+        <div class="container">
+          <h2 class="text-center free-services-title">ÜCRETSİZ HİZMETLER</h2>
+          <div class="row px-5 px-md-0">
+            <div class="col-md-6 col-sm-12">
+              <div>
+                <p>
+                  <img src="img/travelPage/vector1.svg" alt="" />
+                  Havaalanı Ulaşım Hizmeti
+                </p>
+              </div>
+              <div>
+                <p>
+                  <img src="img/travelPage/vector2.svg" alt="" />
+                  Danışmanlık ve Kontrol Hizmeti
+                </p>
+              </div>
+              <div>
+                <p>
+                  <img src="img/travelPage/vector3.svg" alt="" />
+                  Her randevu için oteliniz ve kliniğiniz arası ulaşım hizmeti
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div>
+                <p>
+                  <img src="img/travelPage/vector4.svg" alt="" />
+                  Panoramik Röntgen (2D tarama) Hizmeti
+                </p>
+              </div>
+              <div>
+                <p>
+                  <img src="img/travelPage/vector5.svg" alt="" />
+                  Volmetrik Tomografi (3D tarama) Hizmeti
+                </p>
+              </div>
+              <div>
+                <p>
+                  <img src="img/travelPage/vector6.svg" alt="" />
+                  Kliniğimize yapılan her ziyaret içim İngilizce konuşan
+                  tercüman Desteği
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROESTETİK -->
+    <section class="travel-proestetik travel-proestetik-bg">
+      <div class="container">
+        <div class="row align-items-center px-5 px-sm-0">
+          <div class="col-sm-6">
+            <img
+              src="img/travelPage/proestetik.png"
+              class="img-fluid"
+              alt="Bootstrap Themes"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-sm-6">
+            <div class="d-sm-block">
+              <h1 class="travel-text fs-72 text-center text-sm-start">
+                Proestetik
+                <span class="d-lg-block">Dental</span>
+              </h1>
+              <h1 class="d-block travel-text text-center text-sm-start">olarak biz Hazırız</h1>
+            </div>
+            <div class="my-2 d-none d-sm-block">
+              <p class="blog-hero-desc">
+                is well known that Hungary has become a main tourism
+                destination. Americans have chosen Budapest the second most
+                beautiful city in the world. Hungary has also developed to a top
+                level in dental care and a remarkable dental tourism location
+                for foreign amd domestic patients.
+              </p>
+            </div>
+            <div class="btn-wrapper mt-3 justify-content-sm-start">
+              <button type="button" class="btn thick">Go to Blog</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NEWSLETTER -->
+    <section class="email">
+      <div class="container">
+        <div class="inner-box">
+          <div class="newsletter_box">
+            <div class="section_title aos-init aos-animate">
+              <!-- h2 -->
+              <h2>Ücretsiz Planlayalım</h2>
+              <!-- p -->
+            </div>
+            <form action="" class="mail-form">
+              <div class="form-group">
+                <input
+                  type="name"
+                  class="form-control"
+                  placeholder="Ad Soyad"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Telefon Numarası"
+                />
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Mail" />
+              </div>
+              <div class="form-group">
+                <select
+                  class="form-control form-select"
+                  aria-label="Default select example"
+                >
+                  <option selected>Platform Seçimi</option>
+                  <option value="1">Whatsapp</option>
+                  <option value="2">Google Meet</option>
+                  <option value="3">Mail</option>
+                  <option value="4">Telefon</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <button class="btn blue-btn">gönder</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TRAVEL-IZMIR -->
+    <section class="travel-proestetik">
+      <div class="container">
+        <div class="row align-items-center px-5 px-md-0">
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              src="img/travelPage/Travel-izmir.png"
+              class="img-fluid"
+              alt="Bootstrap Themes"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-md-6 text-start text-md-end">
+            <div class="mb-lg-5">
+              <h1 class="travel-text display-4 mb-3">Travel in</h1>
+              <span class="display-2 pink-text fw-bold lh-1 mb-3">İzmir</span>
+            </div>
+            <div class="mb-1">
+              <p>
+                Well known that Hungary has become a main tourism destination.
+                Americans have chosen Budapest the second most beautiful city in
+                the world. Hungary has also developed to a top level in dental
+                care and a remarkable dental tourism location for foreign amd
+                domestic patients.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-5"></div>
+              <div class="col-lg-7">
+                <div class="row gy-2">
+                  <div class="col-6 text-start">
+                    <div>
+                      <p>
+                        <img src="img/travelPage/vector1.svg" alt="" />
+                        Travel
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                        <img src="img/travelPage/vector2.svg" alt="" />
+                        Car Parking
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                        <img src="img/travelPage/vector3.svg" alt="" />
+                        Accommodation
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-6 text-start">
+                    <div>
+                      <p>
+                        <img src="img/travelPage/vector4.svg" alt="" />
+                        Sightseeing
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                        <img src="img/travelPage/vector5.svg" alt="" />
+                        Translator
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                        <img src="img/travelPage/vector6.svg" alt="" />
+                        Free Tickets
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrapper justify-content-start justify-content-md-end mt-3">
+              <button type="button" class="btn pink-btn thick">
+                Start Your Dental Travel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CITY GUIDE -->
+    <section class="travel-proestetik">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-3 pink-text fw-bold text-uppercase">City</h2>
+          <hr />
+          <h3 class="display-6 fw-semibold">GUIDE</h3>
+        </div>
+        <div class="row text-center align-items-end px-5 px-sm-0">
+          <div class="col-sm-3 text-center">
+            <div class="img-wrapper">
+              <img
+                src="img/travelPage/travel-city1.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <h4 class="my-3">Places to Visit</h4>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+              maxime quam architecto quo inventore harum ex magni, dicta
+              impedit.
+            </p>
+            <div class="btn-wrapper my-3">
+              <button type="button" class="btn pink-btn med">Go to Blog</button>
+            </div>
+          </div>
+          <div class="col-sm-3 text-center">
+            <div class="img-wrapper">
+              <img
+                src="img/travelPage/travel-city2.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <h4 class="my-3">Accommodation</h4>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+              maxime quam architecto quo inventore harum ex magni, dicta
+              impedit.
+            </p>
+            <div class="btn-wrapper my-3">
+              <button type="button" class="btn pink-btn med">Go to Blog</button>
+            </div>
+          </div>
+          <div class="col-sm-3 text-center">
+            <div class="img-wrapper">
+              <img
+                src="img/travelPage/travel-city3.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <h4 class="my-3">Restaurants</h4>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+              maxime quam architecto quo inventore harum ex magni, dicta
+              impedit.
+            </p>
+            <div class="btn-wrapper my-3">
+              <button type="button" class="btn pink-btn med">Go to Blog</button>
+            </div>
+          </div>
+          <div class="col-sm-3 text-center">
+            <div class="img-wrapper">
+              <img
+                src="img/travelPage/travel-city4.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <h4 class="my-3">Entertainment</h4>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+              maxime quam architecto quo inventore harum ex magni, dicta
+              impedit.
+            </p>
+            <div class="btn-wrapper my-3">
+              <button type="button" class="btn pink-btn med">Go to Blog</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="faq"></div>
+    <!-- PINK FOOTER -->
+    <footer class="text-center text-lg-start text-light travel-footer">
+      <div class="py-5">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Logo -->
+            <div class="col-md-3 mx-auto mb-4 border-lg-end">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <div class="img-wrapper">
+                  <img src="img/logo-footer.png" alt="" class="img-fluid" />
+                </div>
+              </h6>
+              <p>
+                Kliniğimiz 2011 yılında Doç. Dr. M. Selim Bilgin ve Doç.
+                Türkiye'nin İzmir ilinde Pro Estetik Diş Kliniği bünyesinde.
+              </p>
+            </div>
+
+            <!-- Çalışma Saatlerimiz -->
+            <div class="col-md-3 mx-auto mb-4 border-lg-end">
+              <!-- Links -->
+
+              <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+              <table class="table text-start text-white border-0">
+                <tbody class="font-weight-normal">
+                  <tr>
+                    <td>Pazartesi - Cuma:</td>
+                    <td>09.00 - 18.00</td>
+                  </tr>
+                  <tr>
+                    <td>Cumartesi - Sat:</td>
+                    <td>09.00 - 18.00</td>
+                  </tr>
+                  <tr>
+                    <td>Pazar:</td>
+                    <td>Kapalı</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Tedavilerimiz -->
+            <div class="col-md-2 mx-auto mb-4 border-lg-end">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Tedavilerimiz</h6>
+              <p>
+                <a href="#!" class="text-reset">Hollywood Smile</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Diş İmplantı</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Diş Telleri</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">All on 4 İmplant Tedavisi</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Invisaling</a>
+              </p>
+            </div>
+            <!-- Social Links -->
+            <div class="col-lg-2 mx-auto mb-4 border-lg-end d-none d-lg-block">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">Facebook</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Twitter</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Instagram</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Career</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Support</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Privacy policy</a>
+              </p>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-4 col-lg-2 col-lg-2 mx-auto mb-md-0 mb-4 fs-6">
+              <!-- Links -->
+              <div class="d-flex flex-column">
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p>
+                  <i class="fas fa-phone me-1"></i>
+                  + 0 232 463 47 47
+                </p>
+                <p>
+                  <i class="fas fa-envelope me-1"></i>
+                  info@proestetikdental.com
+                </p>
+                <p>
+                  <i class="fas fa-home me-1"></i>
+                  Mimar Sinan, Şair Eşref Blv. No:90/A-B, 35220 Konak/İzmir
+                </p>
+              </div>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </div>
+
+      <div class="text-center text-light p-4" style="background-color: #3c3c3c">
+        © 2001-2022, All Rights Reserved
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
